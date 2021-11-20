@@ -1,0 +1,6 @@
+framework module Pods_DJApp_DJAppUITests {
+  umbrella header "Pods-DJApp-DJAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
