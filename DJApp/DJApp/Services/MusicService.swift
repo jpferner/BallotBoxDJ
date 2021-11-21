@@ -7,12 +7,19 @@
 
 import Foundation
 
+extension Notification.Name {
+    static let currentPlaylistChanged = Notification.Name("currentPlaylistChanged")
+    static let songsUpdated = Notification.Name("songsUpdated")
+}
+
 protocol MusicService {
     var currentPlaylist: Playlist? { get }
+    var songs: [Song] { get }
     
     func setPlaylist(_ playlistId: String?)
     
-    func subscribeToPlaylistUpdates(_ listener: PlaylistObserver)
-    func unsubscribeFromPlaylistUpdates(_ listener: PlaylistObserver)
+    func loadSongs() async -> LoadSongsResult
+    
+    
     
 }

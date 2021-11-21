@@ -7,6 +7,10 @@
 
 import Foundation
 
+extension Notification.Name {
+    static let roomChanged = Notification.Name("roomChanged")
+}
+
 protocol RoomService {
     var room: Room? { get }
     
@@ -21,7 +25,4 @@ protocol RoomService {
     func updateNominations(song1: Song, song2: Song) async -> UpdateNominationsResult
 
     func vote(vote: Vote) async -> VoteResult
-    
-    func subscribeToRoomUpdates(_ listener: RoomObserver)
-    func unsubscribeFromRoomUpdates(_ listener: RoomObserver)
 }

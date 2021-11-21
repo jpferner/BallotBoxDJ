@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HostSectionViewModel: ObservableObject, PlaylistObserver {
+class HostSectionViewModel: ObservableObject {
     
     let roomService: RoomService
     let musicService: MusicService
@@ -23,11 +23,14 @@ class HostSectionViewModel: ObservableObject, PlaylistObserver {
         self.room = roomService.room!
         
         self.musicService = ServiceLocator.musicService
-        self.musicService.subscribeToPlaylistUpdates(self)
+        
+        NotificationCenter.default.addObserver(forName: .currentPlaylistChanged, object: nil, queue: .main) { _ in
+            self.playlist = self.musicService.currentPlaylist
+        }
     }
     
     deinit {
-        self.musicService.unsubscribeFromPlaylistUpdates(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
     func onChanged(_ playlist: Playlist?) {

@@ -11,9 +11,15 @@ class RoomServiceImpl: RoomService {
     
     let roomRepository: RoomRepository
     
-    private var listeners: [RoomObserver] = []
+    private var _room: Room? = nil {
+        didSet {
+            sendRoomChangedNotification()
+        }
+    }
     
-    var room: Room? = nil
+    var room: Room? {
+        get { _room }
+    }
     
     init() {
         roomRepository = MockRoomRepository()
@@ -32,7 +38,7 @@ class RoomServiceImpl: RoomService {
         
         switch (result) {
         case .success(let room):
-            updateRoom(room)
+            self._room = room
         case .failure:
             break
         }
@@ -43,7 +49,7 @@ class RoomServiceImpl: RoomService {
     func leaveRoom() async -> LeaveRoomResult {
         await Task.sleep(UInt64(Double(NSEC_PER_SEC)))
         
-        updateRoom(nil)
+        self._room = nil
         
         return .success
     }
@@ -60,21 +66,8 @@ class RoomServiceImpl: RoomService {
         return .success
     }
     
-    private func updateRoom(_ room: Room?) {
-        self.room = room
-        for listener in listeners {
-            listener.onChanged(room)
-        }
-    }
-    
-    func subscribeToRoomUpdates(_ listener: RoomObserver) {
-        listeners.append(listener)
-    }
-    
-    func unsubscribeFromRoomUpdates(_ listener: RoomObserver) {
-        if let index = listeners.firstIndex(where: { $0 === listener }) {
-            listeners.remove(at: index)
-        }
+    private func sendRoomChangedNotification() {
+        NotificationCenter.default.post(name: .roomChanged, object: self)
     }
     
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RootViewModel: ObservableObject, RoomObserver {
+class RootViewModel: ObservableObject {
     
     let roomService: RoomService
     
@@ -15,15 +15,14 @@ class RootViewModel: ObservableObject, RoomObserver {
     
     init() {
         roomService = ServiceLocator.roomService
-        roomService.subscribeToRoomUpdates(self)
+        
+        NotificationCenter.default.addObserver(forName: .roomChanged, object: nil, queue: .main) { _ in
+            self.room = self.roomService.room
+        }
     }
     
     deinit {
-        roomService.unsubscribeFromRoomUpdates(self)
-    }
-    
-    func onChanged(_ room: Room?) {
-        self.room = room
+        NotificationCenter.default.removeObserver(self)
     }
     
 }

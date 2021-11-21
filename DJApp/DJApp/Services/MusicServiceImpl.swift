@@ -9,33 +9,52 @@ import Foundation
 
 class MusicServiceImpl: MusicService {
     
-    private var listeners: [PlaylistObserver] = []
+    private var _currentPlaylist: Playlist? {
+        didSet {
+            sendCurrentPlaylistChangedNotification()
+        }
+    }
     
-    var currentPlaylist: Playlist? = nil
+    private var _songs: [Song] = [] {
+        didSet {
+            sendSongsUpdatedNotification()
+        }
+    }
+    
+    var currentPlaylist: Playlist? {
+        get { _currentPlaylist }
+    }
+    
+    var songs: [Song] {
+        get { _songs }
+    }
     
     func setPlaylist(_ playlistId: String?) {
         if let playlistId = playlistId {
-            updatePlaylist(Playlist(id: playlistId, name: "Playlist"))
+            self._currentPlaylist = Playlist(id: playlistId, name: "Playlist")
         } else {
-            updatePlaylist(nil)
+            self._currentPlaylist = nil
         }
     }
     
-    private func updatePlaylist(_ playlist: Playlist?) {
-        self.currentPlaylist = playlist
-        for listener in listeners {
-            listener.onChanged(playlist)
-        }
+    func loadSongs() async -> LoadSongsResult {
+        _songs = [
+            Song(id: "song-1", title: "Song 1", artist: "Artist 1"),
+            Song(id: "song-2", title: "Song 2", artist: "Artist 2"),
+            Song(id: "song-3", title: "Song 3", artist: "Artist 3"),
+            Song(id: "song-4", title: "Song 4", artist: "Artist 4"),
+            Song(id: "song-5", title: "Song 5", artist: "Artist 5"),
+        ]
+        
+        return .success
     }
     
-    func subscribeToPlaylistUpdates(_ listener: PlaylistObserver) {
-        listeners.append(listener)
+    private func sendCurrentPlaylistChangedNotification() {
+        NotificationCenter.default.post(name: .currentPlaylistChanged, object: self)
     }
     
-    func unsubscribeFromPlaylistUpdates(_ listener: PlaylistObserver) {
-        if let index = listeners.firstIndex(where: { $0 === listener }) {
-            listeners.remove(at: index)
-        }
+    private func sendSongsUpdatedNotification() {
+        NotificationCenter.default.post(name: .songsUpdated, object: self)
     }
     
 }

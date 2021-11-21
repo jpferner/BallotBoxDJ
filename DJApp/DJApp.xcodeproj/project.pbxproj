@@ -37,14 +37,13 @@
 		22A4EE8627497C6D00CBFF95 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE8527497C6D00CBFF95 /* ServiceLocator.swift */; };
 		22A4EE88274980B900CBFF95 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE87274980B900CBFF95 /* RootView.swift */; };
 		22A4EE8A274980E300CBFF95 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE89274980E300CBFF95 /* RootViewModel.swift */; };
-		22A4EE8C2749844F00CBFF95 /* PlaylistObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE8B2749844F00CBFF95 /* PlaylistObserver.swift */; };
-		22A4EE8E2749866C00CBFF95 /* RoomObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE8D2749866C00CBFF95 /* RoomObserver.swift */; };
 		22A4EE90274988DF00CBFF95 /* HostSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE8F274988DF00CBFF95 /* HostSectionView.swift */; };
 		22A4EE922749890A00CBFF95 /* GuestSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE912749890A00CBFF95 /* GuestSectionView.swift */; };
 		22A4EE942749894800CBFF95 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE932749894800CBFF95 /* MusicService.swift */; };
 		22A4EE9827498A4400CBFF95 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9727498A4400CBFF95 /* Playlist.swift */; };
 		22A4EE9A27498A8D00CBFF95 /* MusicServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */; };
 		22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */; };
+		22A4EE9E2749D80800CBFF95 /* LoadSongsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */; };
 		58216324AFF05B2049CE6340 /* Pods_DJApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */; };
 		61F3BEECD98CB9012266601E /* Pods_DJAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */; };
 		C1E0DFA8A0CF324D68156698 /* Pods_DJApp_DJAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */; };
@@ -102,14 +101,13 @@
 		22A4EE8527497C6D00CBFF95 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		22A4EE87274980B900CBFF95 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		22A4EE89274980E300CBFF95 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		22A4EE8B2749844F00CBFF95 /* PlaylistObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistObserver.swift; sourceTree = "<group>"; };
-		22A4EE8D2749866C00CBFF95 /* RoomObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomObserver.swift; sourceTree = "<group>"; };
 		22A4EE8F274988DF00CBFF95 /* HostSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostSectionView.swift; sourceTree = "<group>"; };
 		22A4EE912749890A00CBFF95 /* GuestSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSectionView.swift; sourceTree = "<group>"; };
 		22A4EE932749894800CBFF95 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
 		22A4EE9727498A4400CBFF95 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceImpl.swift; sourceTree = "<group>"; };
 		22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostSectionViewModel.swift; sourceTree = "<group>"; };
+		22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSongsResult.swift; sourceTree = "<group>"; };
 		30A945C1AEA5679F7FAF08FE /* Pods-DJApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp.debug.xcconfig"; path = "Target Support Files/Pods-DJApp/Pods-DJApp.debug.xcconfig"; sourceTree = "<group>"; };
 		42C73F223493F57531C4E848 /* Pods-DJAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJAppTests.release.xcconfig"; path = "Target Support Files/Pods-DJAppTests/Pods-DJAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp_DJAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,8 +224,6 @@
 			children = (
 				227AF8642749641400650089 /* RoomService.swift */,
 				227AF869274964B700650089 /* RoomServiceImpl.swift */,
-				22A4EE8B2749844F00CBFF95 /* PlaylistObserver.swift */,
-				22A4EE8D2749866C00CBFF95 /* RoomObserver.swift */,
 				22A4EE932749894800CBFF95 /* MusicService.swift */,
 				22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */,
 			);
@@ -273,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				22A4EE9727498A4400CBFF95 /* Playlist.swift */,
+				22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -517,7 +514,6 @@
 				22A4EE90274988DF00CBFF95 /* HostSectionView.swift in Sources */,
 				22A4EE8627497C6D00CBFF95 /* ServiceLocator.swift in Sources */,
 				22A4EE782749727400CBFF95 /* VoteResult.swift in Sources */,
-				22A4EE8C2749844F00CBFF95 /* PlaylistObserver.swift in Sources */,
 				227AF86027495B5700650089 /* JoinRoomView.swift in Sources */,
 				22A4EE922749890A00CBFF95 /* GuestSectionView.swift in Sources */,
 				227AF836274948D700650089 /* HomeView.swift in Sources */,
@@ -525,10 +521,10 @@
 				22A4EE7A274972A400CBFF95 /* Vote.swift in Sources */,
 				22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */,
 				22A4EE9A27498A8D00CBFF95 /* MusicServiceImpl.swift in Sources */,
-				22A4EE8E2749866C00CBFF95 /* RoomObserver.swift in Sources */,
 				22A4EE802749775100CBFF95 /* LeaveRoomResult.swift in Sources */,
 				22A4EE742749713D00CBFF95 /* Song.swift in Sources */,
 				227AF86227495D3E00650089 /* PlaylistSelectionView.swift in Sources */,
+				22A4EE9E2749D80800CBFF95 /* LoadSongsResult.swift in Sources */,
 				22A4EE9827498A4400CBFF95 /* Playlist.swift in Sources */,
 				22A4EE8A274980E300CBFF95 /* RootViewModel.swift in Sources */,
 				227AF834274948D700650089 /* DJAppApp.swift in Sources */,
