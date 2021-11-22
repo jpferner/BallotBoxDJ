@@ -15,10 +15,10 @@ struct SelectMusicProviderView: View {
             Text("Select Music App")
                 .padding()
             
-            Text("Name: \(viewModel.room.name)")
+            Text("Name: \(viewModel.room?.name ?? "")")
                 .padding()
 
-            Text("Code: \(viewModel.room.code)")
+            Text("Code: \(viewModel.room?.code ?? "")")
                 .padding()
             
             Button(action: {

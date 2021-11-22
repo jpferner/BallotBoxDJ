@@ -12,7 +12,7 @@ class HostSectionViewModel: ObservableObject {
     let roomService: RoomService
     let musicService: MusicService
     
-    @Published var room: Room
+    @Published var room: Room?
     @Published var playlist: Playlist?
     
     @Published var leaving = false
@@ -20,7 +20,7 @@ class HostSectionViewModel: ObservableObject {
     
     init() {
         self.roomService = ServiceLocator.roomService
-        self.room = roomService.room!
+        self.room = roomService.room
         
         self.musicService = ServiceLocator.musicService
         
@@ -35,6 +35,10 @@ class HostSectionViewModel: ObservableObject {
     
     func onChanged(_ playlist: Playlist?) {
         self.playlist = playlist
+    }
+    
+    func vote(vote:Vote) {
+        
     }
     
     func leaveRoom() {
