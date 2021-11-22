@@ -13,31 +13,50 @@ struct HostSectionView: View {
     var body: some View {
         let noPlaylist = Binding<Bool>(get: { viewModel.playlist == nil }, set: { _ in })
         
-        VStack {
-            if viewModel.leaving {
-                ProgressView()
-            } else {
-                if let errorMessage = viewModel.leavingErrorMessage {
-                    Text(errorMessage)
+        GeometryReader { geometry in
+            VStack(alignment: .center) {
+                if viewModel.leaving {
+                    ProgressView()
+                } else {
+                    if let errorMessage = viewModel.leavingErrorMessage {
+                        Text(errorMessage)
+                            .padding()
+                    }
+                    
+                    Text("Name: \(viewModel.room?.name ?? "")")
                         .padding()
-                }
-                
-                Text("Name: \(viewModel.room.name)")
-                    .padding()
 
-                Text("Code: \(viewModel.room.code)")
-                    .padding()
-                
-                Button(action: {
-                    viewModel.leaveRoom()
-                }) {
-                    Text("Leave Room")
+                    Text("Code: \(viewModel.room?.code ?? "")")
+                        .padding()
+                    
+                    Text("Playlist: \(viewModel.playlist?.name ?? "")")
+                        .padding()
+                    
+                    Button(action: {
+                        viewModel.leaveRoom()
+                    }) {
+                        Text("Leave Room")
+                    }
                 }
             }
+            .frame(width: geometry.size.width)
         }
+        .background(Color.green)
         .sheet(isPresented: noPlaylist) {
-            SelectMusicProviderView()
+            PickPlaylistFlowView(provider: $viewModel.provider)
                 .interactiveDismissDisabled()
+        }
+    }
+}
+
+struct PickPlaylistFlowView: View {
+    @Binding var provider: Provider?
+    
+    var body: some View {
+        if provider == nil {
+            SelectMusicProviderView()
+        } else {
+            PlaylistSelectionView()
         }
     }
 }

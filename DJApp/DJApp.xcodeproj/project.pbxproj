@@ -44,6 +44,15 @@
 		22A4EE9A27498A8D00CBFF95 /* MusicServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */; };
 		22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */; };
 		22A4EE9E2749D80800CBFF95 /* LoadSongsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */; };
+		22A4EEA02749DC3000CBFF95 /* SongStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9F2749DC3000CBFF95 /* SongStatus.swift */; };
+		22A4EEA2274AB45B00CBFF95 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */; };
+		22A4EEA5274AB75400CBFF95 /* DJApp-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA4274AB6D600CBFF95 /* DJApp-Bridging-Header.h */; };
+		22A4EEA7274AF6EA00CBFF95 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA6274AF6EA00CBFF95 /* Provider.swift */; };
+		22A4EEA9274AFB9E00CBFF95 /* LoadPlaylistsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA8274AFB9E00CBFF95 /* LoadPlaylistsResult.swift */; };
+		22A4EEAB274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEAA274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift */; };
+		22A4EEAD274B021800CBFF95 /* ChooseProviderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEAC274B021800CBFF95 /* ChooseProviderResult.swift */; };
+		22A4EEAF274B0A8600CBFF95 /* LoadPlaylistResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEAE274B0A8600CBFF95 /* LoadPlaylistResult.swift */; };
+		22A4EEB1274B0B5400CBFF95 /* SelectPlaylistResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEB0274B0B5400CBFF95 /* SelectPlaylistResult.swift */; };
 		58216324AFF05B2049CE6340 /* Pods_DJApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */; };
 		61F3BEECD98CB9012266601E /* Pods_DJAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */; };
 		C1E0DFA8A0CF324D68156698 /* Pods_DJApp_DJAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */; };
@@ -108,6 +117,16 @@
 		22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceImpl.swift; sourceTree = "<group>"; };
 		22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostSectionViewModel.swift; sourceTree = "<group>"; };
 		22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSongsResult.swift; sourceTree = "<group>"; };
+		22A4EE9F2749DC3000CBFF95 /* SongStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStatus.swift; sourceTree = "<group>"; };
+		22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		22A4EEA3274AB4B100CBFF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		22A4EEA4274AB6D600CBFF95 /* DJApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		22A4EEA6274AF6EA00CBFF95 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		22A4EEA8274AFB9E00CBFF95 /* LoadPlaylistsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPlaylistsResult.swift; sourceTree = "<group>"; };
+		22A4EEAA274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistSelectionViewModel.swift; sourceTree = "<group>"; };
+		22A4EEAC274B021800CBFF95 /* ChooseProviderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseProviderResult.swift; sourceTree = "<group>"; };
+		22A4EEAE274B0A8600CBFF95 /* LoadPlaylistResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPlaylistResult.swift; sourceTree = "<group>"; };
+		22A4EEB0274B0B5400CBFF95 /* SelectPlaylistResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaylistResult.swift; sourceTree = "<group>"; };
 		30A945C1AEA5679F7FAF08FE /* Pods-DJApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp.debug.xcconfig"; path = "Target Support Files/Pods-DJApp/Pods-DJApp.debug.xcconfig"; sourceTree = "<group>"; };
 		42C73F223493F57531C4E848 /* Pods-DJAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJAppTests.release.xcconfig"; path = "Target Support Files/Pods-DJAppTests/Pods-DJAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp_DJAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58216324AFF05B2049CE6340 /* Pods_DJApp.framework in Frameworks */,
+				22A4EEA2274AB45B00CBFF95 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +191,7 @@
 		227AF832274948D700650089 /* DJApp */ = {
 			isa = PBXGroup;
 			children = (
+				22A4EEA3274AB4B100CBFF95 /* Info.plist */,
 				22A4EE6C27496CF400CBFF95 /* Repositories */,
 				227AF8662749644F00650089 /* Model */,
 				227AF8632749640000650089 /* Services */,
@@ -190,6 +211,8 @@
 				22A4EE8F274988DF00CBFF95 /* HostSectionView.swift */,
 				22A4EE912749890A00CBFF95 /* GuestSectionView.swift */,
 				22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */,
+				22A4EEA4274AB6D600CBFF95 /* DJApp-Bridging-Header.h */,
+				22A4EEAA274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift */,
 			);
 			path = DJApp;
 			sourceTree = "<group>";
@@ -270,6 +293,12 @@
 			children = (
 				22A4EE9727498A4400CBFF95 /* Playlist.swift */,
 				22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */,
+				22A4EE9F2749DC3000CBFF95 /* SongStatus.swift */,
+				22A4EEA6274AF6EA00CBFF95 /* Provider.swift */,
+				22A4EEA8274AFB9E00CBFF95 /* LoadPlaylistsResult.swift */,
+				22A4EEAC274B021800CBFF95 /* ChooseProviderResult.swift */,
+				22A4EEAE274B0A8600CBFF95 /* LoadPlaylistResult.swift */,
+				22A4EEB0274B0B5400CBFF95 /* SelectPlaylistResult.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -290,6 +319,7 @@
 		C7DB9AFBC9019089458FA760 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */,
 				AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */,
 				91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */,
 				DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */,
@@ -308,6 +338,7 @@
 				227AF82C274948D700650089 /* Sources */,
 				227AF82D274948D700650089 /* Frameworks */,
 				227AF82E274948D700650089 /* Resources */,
+				58C3CFC7D3F5D93F74FE68A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +376,7 @@
 				227AF846274948DA00650089 /* Sources */,
 				227AF847274948DA00650089 /* Frameworks */,
 				227AF848274948DA00650089 /* Resources */,
+				D7641149E7C5F7B6CBAE8A65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,6 +524,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		58C3CFC7D3F5D93F74FE68A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DJApp/Pods-DJApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DJApp/Pods-DJApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DJApp/Pods-DJApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7641149E7C5F7B6CBAE8A65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DJApp-DJAppUITests/Pods-DJApp-DJAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DJApp-DJAppUITests/Pods-DJApp-DJAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DJApp-DJAppUITests/Pods-DJApp-DJAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -499,13 +565,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A4EEA5274AB75400CBFF95 /* DJApp-Bridging-Header.h in Sources */,
 				22A4EE762749717900CBFF95 /* UpdateNominationsResult.swift in Sources */,
+				22A4EEAD274B021800CBFF95 /* ChooseProviderResult.swift in Sources */,
 				22A4EE942749894800CBFF95 /* MusicService.swift in Sources */,
 				22A4EE6E27496D0300CBFF95 /* RoomRepository.swift in Sources */,
+				22A4EEAF274B0A8600CBFF95 /* LoadPlaylistResult.swift in Sources */,
 				227AF86A274964B700650089 /* RoomServiceImpl.swift in Sources */,
 				227AF8652749641400650089 /* RoomService.swift in Sources */,
 				22A4EE72274970F500CBFF95 /* UpdateSongResult.swift in Sources */,
 				227AF86C2749654200650089 /* HostRoomResult.swift in Sources */,
+				22A4EEA9274AFB9E00CBFF95 /* LoadPlaylistsResult.swift in Sources */,
 				227AF85E274955F100650089 /* HostRoomView.swift in Sources */,
 				22A4EE7E2749746900CBFF95 /* RefreshRoomResult.swift in Sources */,
 				22A4EE88274980B900CBFF95 /* RootView.swift in Sources */,
@@ -513,6 +583,7 @@
 				22A4EE822749788D00CBFF95 /* SelectMusicProviderView.swift in Sources */,
 				22A4EE90274988DF00CBFF95 /* HostSectionView.swift in Sources */,
 				22A4EE8627497C6D00CBFF95 /* ServiceLocator.swift in Sources */,
+				22A4EEAB274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift in Sources */,
 				22A4EE782749727400CBFF95 /* VoteResult.swift in Sources */,
 				227AF86027495B5700650089 /* JoinRoomView.swift in Sources */,
 				22A4EE922749890A00CBFF95 /* GuestSectionView.swift in Sources */,
@@ -521,6 +592,8 @@
 				22A4EE7A274972A400CBFF95 /* Vote.swift in Sources */,
 				22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */,
 				22A4EE9A27498A8D00CBFF95 /* MusicServiceImpl.swift in Sources */,
+				22A4EEA7274AF6EA00CBFF95 /* Provider.swift in Sources */,
+				22A4EEA02749DC3000CBFF95 /* SongStatus.swift in Sources */,
 				22A4EE802749775100CBFF95 /* LeaveRoomResult.swift in Sources */,
 				22A4EE742749713D00CBFF95 /* Song.swift in Sources */,
 				227AF86227495D3E00650089 /* PlaylistSelectionView.swift in Sources */,
@@ -530,6 +603,7 @@
 				227AF834274948D700650089 /* DJAppApp.swift in Sources */,
 				22A4EE7027496D2500CBFF95 /* MockRoomRepository.swift in Sources */,
 				227AF86E2749664C00650089 /* HostRoomViewModel.swift in Sources */,
+				22A4EEB1274B0B5400CBFF95 /* SelectPlaylistResult.swift in Sources */,
 				22A4EE7C2749734400CBFF95 /* JoinRoomResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,21 +766,30 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DJApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 59G34X7E6F;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DJApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferner.DJApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DJApp/DJApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -721,21 +804,30 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DJApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 59G34X7E6F;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DJApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferner.DJApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DJApp/DJApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
