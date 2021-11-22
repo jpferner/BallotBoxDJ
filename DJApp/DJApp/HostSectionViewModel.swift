@@ -43,6 +43,10 @@ class HostSectionViewModel: ObservableObject {
         self.playlist = playlist
     }
     
+    func vote(vote:Vote) {
+        
+    }
+    
     func leaveRoom() {
         leaving = true
         
