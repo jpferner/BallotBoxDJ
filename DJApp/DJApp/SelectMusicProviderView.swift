@@ -22,14 +22,14 @@ struct SelectMusicProviderView: View {
                 .padding()
             
             Button(action: {
-                viewModel.pickPlaylist()
+                viewModel.pickApplePlaylist()
             }) {
                 Text("Apple Music")
                     .padding()
             }
             
             Button(action: {
-                viewModel.pickPlaylist()
+                viewModel.pickSpotifyPlaylist()
             }) {
                 Text("Spotify")
                     .padding()

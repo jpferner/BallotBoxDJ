@@ -6,7 +6,8 @@ target 'DJApp' do
   use_frameworks!
 
   # Pods for DJApp
-
+  pod 'Alamofire', '~> 5.4'
+  
   target 'DJAppTests' do
     inherit! :search_paths
     # Pods for testing
