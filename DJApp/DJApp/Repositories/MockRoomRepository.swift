@@ -16,7 +16,7 @@ class MockRoomRepository: RoomRepository {
                              code: "ABC-DEF",
                              hosting: true,
                              currentSong: nil,
-                             nominations: nil,
+                             nominations: (Song(id: "15615", title: "Tennessee Whiskey", artist: "Chris Stapleton"), Song(id: "48118", title: "Fix You", artist: "Coldplay")),
                              vote: nil
                             ))
 //        return .failure(.network)
