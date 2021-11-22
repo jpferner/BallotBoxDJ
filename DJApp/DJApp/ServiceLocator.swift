@@ -9,6 +9,8 @@ import Foundation
 
 class ServiceLocator {
     
+    static let spotifyAPI: SpotifyAPI = SpotifyAPI()
+    
     static let roomService: RoomService = RoomServiceImpl()
     static let musicService: MusicService = MusicServiceImpl()
     
