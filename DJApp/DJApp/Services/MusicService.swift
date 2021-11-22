@@ -8,18 +8,29 @@
 import Foundation
 
 extension Notification.Name {
-    static let currentPlaylistChanged = Notification.Name("currentPlaylistChanged")
+    static let providerUpdated = Notification.Name("providerUpdated")
+    static let playlistSelected = Notification.Name("playlistSelected")
     static let songsUpdated = Notification.Name("songsUpdated")
+    static let currentSongChanged = Notification.Name("currentSongChanged")
+    static let currentSongStatusUpdated = Notification.Name("currentSongStatusUpdated")
 }
 
 protocol MusicService {
+    var provider: Provider? { get }
+    
     var currentPlaylist: Playlist? { get }
     var songs: [Song] { get }
+    var currentSong: Song? { get }
+    var currentSongStatus: SongStatus? { get }
     
-    func setPlaylist(_ playlistId: String?)
+    func chooseProvider(provider: Provider) async -> ChooseProviderResult
+    
+    func loadPlaylists() async -> LoadPlaylistsResult
+    
+    func selectPlaylist(_ playlistId: String?) async -> SelectPlaylistResult
     
     func loadSongs() async -> LoadSongsResult
     
-    
+    func playSong(song: Song)
     
 }

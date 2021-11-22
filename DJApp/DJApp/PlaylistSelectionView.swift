@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct PlaylistSelectionView: View {
+    @StateObject private var viewModel = PlaylistSelectionViewModel()
+    
     var body: some View {
-        Text("Select Playlist")
-            .navigationTitle("Select Playlist")
+        VStack {
+            if viewModel.loading {
+                ProgressView()
+            } else if let errorMessage = viewModel.errorMessage {
+                Text(errorMessage)
+            } else {
+                List(viewModel.playlists, id: \.id) { playlist in
+                    Text(playlist.name)
+                        .onTapGesture {
+                            viewModel.selectPlaylist(playlist.id)
+                        }
+                }
+            }
+        }
     }
 }
 
