@@ -22,8 +22,25 @@ class SelectMusicProviderViewModel: ObservableObject {
         room = roomService.room
     }
     
+    func pickApplePlaylist() {
+        pickPlaylist()
+    }
+    
+    func pickSpotifyPlaylist() {
+        Task.detached {
+            let result = await self.musicService.chooseProvider(provider: .spotify)
+            
+            switch result {
+            case .success:
+                print("successfully chose spotify provider")
+            case .failure(_):
+                print("failed to choose spotify provider")
+            }
+        }
+    }
+    
     func pickPlaylist() {
-        musicService.setPlaylist("playlist-1")
+//        musicService.selectPlaylist("playlist-1")
     }
     
 }

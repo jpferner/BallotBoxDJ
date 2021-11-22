@@ -13,6 +13,7 @@ class HostSectionViewModel: ObservableObject {
     let musicService: MusicService
     
     @Published var room: Room?
+    @Published var provider: Provider?
     @Published var playlist: Playlist?
     
     @Published var leaving = false
@@ -23,8 +24,13 @@ class HostSectionViewModel: ObservableObject {
         self.room = roomService.room
         
         self.musicService = ServiceLocator.musicService
+        self.provider = self.musicService.provider
+        self.playlist = self.musicService.currentPlaylist
         
-        NotificationCenter.default.addObserver(forName: .currentPlaylistChanged, object: nil, queue: .main) { _ in
+        NotificationCenter.default.addObserver(forName: .providerUpdated, object: nil, queue: .main) { _ in
+            self.provider = self.musicService.provider
+        }
+        NotificationCenter.default.addObserver(forName: .playlistSelected, object: nil, queue: .main) { _ in
             self.playlist = self.musicService.currentPlaylist
         }
     }
