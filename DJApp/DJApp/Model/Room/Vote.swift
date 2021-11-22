@@ -8,6 +8,6 @@
 import Foundation
 
 enum Vote {
-    case song(songId: String)
+    case song(_ songId: String)
     case random
 }

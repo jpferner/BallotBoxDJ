@@ -12,14 +12,14 @@ class SelectMusicProviderViewModel: ObservableObject {
     let roomService: RoomService
     let musicService: MusicService
     
-    @Published var room: Room
+    @Published var room: Room?
     
     init() {
         roomService = ServiceLocator.roomService
         musicService = ServiceLocator.musicService
         
         // todo remember this forced unwrap
-        room = roomService.room!
+        room = roomService.room
     }
     
     func pickPlaylist() {
