@@ -44,6 +44,7 @@
 		55BADC495DCC3424BA9B0FC6D0DC011D /* Pods-DJApp-DJAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DJApp-DJAppUITests"; path = Pods_DJApp_DJAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621BF72B2A15E93F7E9E7B39D394B915 /* Pods-DJApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DJApp.modulemap"; sourceTree = "<group>"; };
 		67F757145D29A599160089E2BD93352C /* Pods-DJAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJAppTests-Info.plist"; sourceTree = "<group>"; };
+		720A480E274ACCE700179543 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73650A476ED2BC42654E718C7FCF48CD /* Pods-DJApp-DJAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DJApp-DJAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		7BD30B4417A5AAC3950B285BEEDC891F /* Pods-DJAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -51,7 +52,7 @@
 		8E54F47D895ABEE6E19734DB9887B548 /* Pods-DJApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		968214E10A0E9ADC6FE33D8FB4A56D7E /* Pods-DJApp-DJAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJApp-DJAppUITests-Info.plist"; sourceTree = "<group>"; };
 		98699E53FD9BBA109087A24F036008F3 /* Pods-DJApp-DJAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DJApp-DJAppUITests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A47AC82504401C0CDD9373197EC59F7A /* Pods-DJAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A4846CE6D11F6BC32D1C1C02C52E6117 /* Pods-DJApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC1D38D3F695C11070CB63EBD09CEC82 /* Pods-DJAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DJAppTests-dummy.m"; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				720A480E274ACCE700179543 /* Storyboard.storyboard */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				16A3C6A76423D442FD26F155EB1F258C /* Products */,
