@@ -13,5 +13,6 @@ class ServiceLocator {
     
     static let roomService: RoomService = RoomServiceImpl()
     static let musicService: MusicService = MusicServiceImpl()
+    static let chatService: ChatService = ChatServiceImpl()
     
 }

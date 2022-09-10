@@ -11,12 +11,22 @@ class PlaylistSelectionViewModel: ObservableObject {
     
     private let musicService: MusicService
     
+    private let roomService: RoomService
+    @Published var room: Room?
+    
+    @Published var nominationQueue: [Song]
+    
     @Published var loading: Bool = false
-    @Published var playlists: [Playlist] = []
+    @Published var playlists: [Playlist] = [Playlist(id: "playlist1", name: "The Playlist", artwork: ""), Playlist(id: "playlist 2", name: "Another Playlist", artwork: "")]
     @Published var errorMessage: String? = nil
     
-    init() {
+    init(roomService: RoomService) {
         musicService = ServiceLocator.musicService
+        
+        self.roomService = roomService
+        self.room = roomService.room
+        
+        self.nominationQueue = [roomService.room!.nominations!.0, roomService.room!.nominations!.1]
         
         loadPlaylists()
     }
