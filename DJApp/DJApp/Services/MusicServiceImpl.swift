@@ -306,11 +306,11 @@ class MusicServiceImpl: MusicService {
     
     func loadSongs() async -> LoadSongsResult {
         _songs = [
-            Song(id: "song-1", title: "Song 1", artist: "Artist 1"),
-            Song(id: "song-2", title: "Song 2", artist: "Artist 2"),
-            Song(id: "song-3", title: "Song 3", artist: "Artist 3"),
-            Song(id: "song-4", title: "Song 4", artist: "Artist 4"),
-            Song(id: "song-5", title: "Song 5", artist: "Artist 5"),
+            Song(id: "song-1", provider: .spotify, title: "Song 1", artist: "Artist 1"),
+            Song(id: "song-2", provider: .spotify, title: "Song 2", artist: "Artist 2"),
+            Song(id: "song-3", provider: .spotify, title: "Song 3", artist: "Artist 3"),
+            Song(id: "song-4", provider: .spotify, title: "Song 4", artist: "Artist 4"),
+            Song(id: "song-5", provider: .spotify, title: "Song 5", artist: "Artist 5"),
         ]
         
         return .success

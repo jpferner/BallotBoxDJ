@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct Song {
+struct Song: Equatable {
     let id: String
+    let provider: Provider
     let title: String
     let artist: String
+    var artwork: String? = nil
 }

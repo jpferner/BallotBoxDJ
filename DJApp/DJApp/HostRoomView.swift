@@ -24,10 +24,12 @@ struct HostRoomView: View {
                 Button(action: {
                     viewModel.hostRoom()
                 }) {
-                    Text("Host Room")
+                    Text("**Host Room**")
                 }
+                
             }
         }
+        .modifier(BackgroundColorStyle())
     }
 }
 

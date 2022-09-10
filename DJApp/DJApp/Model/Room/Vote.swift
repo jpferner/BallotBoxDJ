@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Vote {
-    case song(_ songId: String)
+enum Vote: Equatable {
+    case song(_ song: Song)
     case random
 }

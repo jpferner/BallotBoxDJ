@@ -26,6 +26,9 @@ class RoomServiceImpl: RoomService {
     }
     
     func joinRoom(_ code: String) async -> JoinRoomResult {
+        let result = await roomRepository.joinRoom(code)
+        
+        
         return .success
     }
     
@@ -63,7 +66,16 @@ class RoomServiceImpl: RoomService {
     }
     
     func vote(vote: Vote) async -> VoteResult {
-        return .success
+        let result = await roomRepository.vote(vote)
+        switch result {
+        case .success(let room):
+            self._room = room
+            
+            return result
+            
+        case .failure:
+            return result
+        }
     }
     
     private func sendRoomChangedNotification() {
