@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B652D9ADA0F7EF77B813A6D /* Pods_DJApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286DD1069042B073D3EC116B /* Pods_DJApp.framework */; };
 		227AF834274948D700650089 /* DJAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227AF833274948D700650089 /* DJAppApp.swift */; };
 		227AF836274948D700650089 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227AF835274948D700650089 /* HomeView.swift */; };
 		227AF838274948DA00650089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227AF837274948DA00650089 /* Assets.xcassets */; };
@@ -45,7 +46,6 @@
 		22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */; };
 		22A4EE9E2749D80800CBFF95 /* LoadSongsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */; };
 		22A4EEA02749DC3000CBFF95 /* SongStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EE9F2749DC3000CBFF95 /* SongStatus.swift */; };
-		22A4EEA2274AB45B00CBFF95 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */; };
 		22A4EEA5274AB75400CBFF95 /* DJApp-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA4274AB6D600CBFF95 /* DJApp-Bridging-Header.h */; };
 		22A4EEA7274AF6EA00CBFF95 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA6274AF6EA00CBFF95 /* Provider.swift */; };
 		22A4EEA9274AFB9E00CBFF95 /* LoadPlaylistsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEA8274AFB9E00CBFF95 /* LoadPlaylistsResult.swift */; };
@@ -53,9 +53,36 @@
 		22A4EEAD274B021800CBFF95 /* ChooseProviderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEAC274B021800CBFF95 /* ChooseProviderResult.swift */; };
 		22A4EEAF274B0A8600CBFF95 /* LoadPlaylistResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEAE274B0A8600CBFF95 /* LoadPlaylistResult.swift */; };
 		22A4EEB1274B0B5400CBFF95 /* SelectPlaylistResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4EEB0274B0B5400CBFF95 /* SelectPlaylistResult.swift */; };
-		58216324AFF05B2049CE6340 /* Pods_DJApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */; };
-		61F3BEECD98CB9012266601E /* Pods_DJAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */; };
-		C1E0DFA8A0CF324D68156698 /* Pods_DJApp_DJAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */; };
+		24738A092AE9AEF80038BA5F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A042AE9AEF80038BA5F /* ChatMessage.swift */; };
+		24738A0A2AE9AEF80038BA5F /* SendMessageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A052AE9AEF80038BA5F /* SendMessageResult.swift */; };
+		24738A0B2AE9AEF80038BA5F /* VoteMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A062AE9AEF80038BA5F /* VoteMessage.swift */; };
+		24738A0C2AE9AEF80038BA5F /* GetChatRoomResutl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A072AE9AEF80038BA5F /* GetChatRoomResutl.swift */; };
+		24738A0D2AE9AEF80038BA5F /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A082AE9AEF80038BA5F /* ChatRoom.swift */; };
+		24738A0F2AE9AF950038BA5F /* VoteTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A0E2AE9AF950038BA5F /* VoteTally.swift */; };
+		24738A112AE9AFBF0038BA5F /* NewPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A102AE9AFBF0038BA5F /* NewPlaylistView.swift */; };
+		24738A132AE9AFEB0038BA5F /* GuestSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A122AE9AFEB0038BA5F /* GuestSectionViewModel.swift */; };
+		24738A152AE9B0010038BA5F /* SettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A142AE9B0010038BA5F /* SettingsState.swift */; };
+		24738A172AE9B0390038BA5F /* EnterCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A162AE9B0390038BA5F /* EnterCodeView.swift */; };
+		24738A192AE9B16F0038BA5F /* CurrentSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A182AE9B16F0038BA5F /* CurrentSongView.swift */; };
+		24738A1B2AE9B1920038BA5F /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A1A2AE9B1920038BA5F /* ChatService.swift */; };
+		24738A1D2AE9B19C0038BA5F /* ChatServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A1C2AE9B19C0038BA5F /* ChatServiceImpl.swift */; };
+		24738A1F2AE9B1BB0038BA5F /* CurrentSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A1E2AE9B1BB0038BA5F /* CurrentSongViewModel.swift */; };
+		24738A212AE9B1DA0038BA5F /* NewPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A202AE9B1DA0038BA5F /* NewPlaylistViewModel.swift */; };
+		24738A232AE9B2210038BA5F /* SongLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A222AE9B2210038BA5F /* SongLinkView.swift */; };
+		24738A252AE9B22E0038BA5F /* SongLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A242AE9B22E0038BA5F /* SongLinkViewModel.swift */; };
+		24738A2A2AE9B2950038BA5F /* VoteButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A262AE9B2950038BA5F /* VoteButtonsView.swift */; };
+		24738A2B2AE9B2950038BA5F /* VoteButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A272AE9B2950038BA5F /* VoteButtonsViewModel.swift */; };
+		24738A2C2AE9B2950038BA5F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A282AE9B2950038BA5F /* SettingsView.swift */; };
+		24738A2D2AE9B2950038BA5F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A292AE9B2950038BA5F /* SettingsViewModel.swift */; };
+		24738A302AE9B2BC0038BA5F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A2E2AE9B2BC0038BA5F /* ChatView.swift */; };
+		24738A312AE9B2BC0038BA5F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A2F2AE9B2BC0038BA5F /* ChatViewModel.swift */; };
+		24738A332AE9B2EE0038BA5F /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A322AE9B2EE0038BA5F /* Setting.swift */; };
+		24738A352AE9B3350038BA5F /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A342AE9B3350038BA5F /* FlexibleSheet.swift */; };
+		24738A382AE9B3A70038BA5F /* ColorListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A362AE9B3A70038BA5F /* ColorListViewModel.swift */; };
+		24738A392AE9B3A70038BA5F /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24738A372AE9B3A70038BA5F /* ColorListView.swift */; };
+		24738A3D2AE9B7E80038BA5F /* SpotifyiOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24738A3C2AE9B7E80038BA5F /* SpotifyiOS.xcframework */; };
+		2E82EC027B651072BE2306F3 /* Pods_DJApp_DJAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04E7656B6AD59E66A880A72 /* Pods_DJApp_DJAppUITests.framework */; };
+		B3F98276EB401E647F20FC85 /* Pods_DJAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A97A12E41DA0E10D491AA99 /* Pods_DJAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +104,7 @@
 
 /* Begin PBXFileReference section */
 		0966C6DA83D7135539138A32 /* Pods-DJAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DJAppTests/Pods-DJAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A97A12E41DA0E10D491AA99 /* Pods_DJAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		227AF830274948D700650089 /* DJApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227AF833274948D700650089 /* DJAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJAppApp.swift; sourceTree = "<group>"; };
 		227AF835274948D700650089 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -118,7 +146,6 @@
 		22A4EE9B27498B0100CBFF95 /* HostSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostSectionViewModel.swift; sourceTree = "<group>"; };
 		22A4EE9D2749D80800CBFF95 /* LoadSongsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSongsResult.swift; sourceTree = "<group>"; };
 		22A4EE9F2749DC3000CBFF95 /* SongStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStatus.swift; sourceTree = "<group>"; };
-		22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		22A4EEA3274AB4B100CBFF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22A4EEA4274AB6D600CBFF95 /* DJApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		22A4EEA6274AF6EA00CBFF95 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -127,14 +154,41 @@
 		22A4EEAC274B021800CBFF95 /* ChooseProviderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseProviderResult.swift; sourceTree = "<group>"; };
 		22A4EEAE274B0A8600CBFF95 /* LoadPlaylistResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPlaylistResult.swift; sourceTree = "<group>"; };
 		22A4EEB0274B0B5400CBFF95 /* SelectPlaylistResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaylistResult.swift; sourceTree = "<group>"; };
+		24738A042AE9AEF80038BA5F /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		24738A052AE9AEF80038BA5F /* SendMessageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageResult.swift; sourceTree = "<group>"; };
+		24738A062AE9AEF80038BA5F /* VoteMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteMessage.swift; sourceTree = "<group>"; };
+		24738A072AE9AEF80038BA5F /* GetChatRoomResutl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChatRoomResutl.swift; sourceTree = "<group>"; };
+		24738A082AE9AEF80038BA5F /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		24738A0E2AE9AF950038BA5F /* VoteTally.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteTally.swift; sourceTree = "<group>"; };
+		24738A102AE9AFBF0038BA5F /* NewPlaylistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlaylistView.swift; sourceTree = "<group>"; };
+		24738A122AE9AFEB0038BA5F /* GuestSectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestSectionViewModel.swift; sourceTree = "<group>"; };
+		24738A142AE9B0010038BA5F /* SettingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsState.swift; sourceTree = "<group>"; };
+		24738A162AE9B0390038BA5F /* EnterCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterCodeView.swift; sourceTree = "<group>"; };
+		24738A182AE9B16F0038BA5F /* CurrentSongView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSongView.swift; sourceTree = "<group>"; };
+		24738A1A2AE9B1920038BA5F /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		24738A1C2AE9B19C0038BA5F /* ChatServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatServiceImpl.swift; sourceTree = "<group>"; };
+		24738A1E2AE9B1BB0038BA5F /* CurrentSongViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSongViewModel.swift; sourceTree = "<group>"; };
+		24738A202AE9B1DA0038BA5F /* NewPlaylistViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlaylistViewModel.swift; sourceTree = "<group>"; };
+		24738A222AE9B2210038BA5F /* SongLinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongLinkView.swift; sourceTree = "<group>"; };
+		24738A242AE9B22E0038BA5F /* SongLinkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongLinkViewModel.swift; sourceTree = "<group>"; };
+		24738A262AE9B2950038BA5F /* VoteButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteButtonsView.swift; sourceTree = "<group>"; };
+		24738A272AE9B2950038BA5F /* VoteButtonsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteButtonsViewModel.swift; sourceTree = "<group>"; };
+		24738A282AE9B2950038BA5F /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		24738A292AE9B2950038BA5F /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		24738A2E2AE9B2BC0038BA5F /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		24738A2F2AE9B2BC0038BA5F /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		24738A322AE9B2EE0038BA5F /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		24738A342AE9B3350038BA5F /* FlexibleSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
+		24738A362AE9B3A70038BA5F /* ColorListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorListViewModel.swift; sourceTree = "<group>"; };
+		24738A372AE9B3A70038BA5F /* ColorListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
+		24738A3C2AE9B7E80038BA5F /* SpotifyiOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpotifyiOS.xcframework; sourceTree = "<group>"; };
+		286DD1069042B073D3EC116B /* Pods_DJApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A945C1AEA5679F7FAF08FE /* Pods-DJApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp.debug.xcconfig"; path = "Target Support Files/Pods-DJApp/Pods-DJApp.debug.xcconfig"; sourceTree = "<group>"; };
 		42C73F223493F57531C4E848 /* Pods-DJAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJAppTests.release.xcconfig"; path = "Target Support Files/Pods-DJAppTests/Pods-DJAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp_DJAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A688D6532702369696F49B77 /* Pods-DJApp-DJAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp-DJAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DJApp-DJAppUITests/Pods-DJApp-DJAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6BEEEF8DEEDA30DB9ACA7 /* Pods-DJApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp.release.xcconfig"; path = "Target Support Files/Pods-DJApp/Pods-DJApp.release.xcconfig"; sourceTree = "<group>"; };
+		D04E7656B6AD59E66A880A72 /* Pods_DJApp_DJAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJApp_DJAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95FD6A9F27228FF0C2EBB43 /* Pods-DJApp-DJAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJApp-DJAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DJApp-DJAppUITests/Pods-DJApp-DJAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +196,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58216324AFF05B2049CE6340 /* Pods_DJApp.framework in Frameworks */,
-				22A4EEA2274AB45B00CBFF95 /* SpotifyiOS.framework in Frameworks */,
+				24738A3D2AE9B7E80038BA5F /* SpotifyiOS.xcframework in Frameworks */,
+				0B652D9ADA0F7EF77B813A6D /* Pods_DJApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61F3BEECD98CB9012266601E /* Pods_DJAppTests.framework in Frameworks */,
+				B3F98276EB401E647F20FC85 /* Pods_DJAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E0DFA8A0CF324D68156698 /* Pods_DJApp_DJAppUITests.framework in Frameworks */,
+				2E82EC027B651072BE2306F3 /* Pods_DJApp_DJAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,14 +251,31 @@
 				227AF8632749640000650089 /* Services */,
 				227AF833274948D700650089 /* DJAppApp.swift */,
 				227AF835274948D700650089 /* HomeView.swift */,
+				24738A342AE9B3350038BA5F /* FlexibleSheet.swift */,
 				227AF837274948DA00650089 /* Assets.xcassets */,
 				227AF839274948DA00650089 /* Preview Content */,
 				227AF85D274955F100650089 /* HostRoomView.swift */,
+				24738A182AE9B16F0038BA5F /* CurrentSongView.swift */,
 				227AF85F27495B5700650089 /* JoinRoomView.swift */,
+				24738A162AE9B0390038BA5F /* EnterCodeView.swift */,
+				24738A222AE9B2210038BA5F /* SongLinkView.swift */,
+				24738A2E2AE9B2BC0038BA5F /* ChatView.swift */,
+				24738A2F2AE9B2BC0038BA5F /* ChatViewModel.swift */,
+				24738A122AE9AFEB0038BA5F /* GuestSectionViewModel.swift */,
+				24738A1E2AE9B1BB0038BA5F /* CurrentSongViewModel.swift */,
+				24738A282AE9B2950038BA5F /* SettingsView.swift */,
+				24738A292AE9B2950038BA5F /* SettingsViewModel.swift */,
+				24738A262AE9B2950038BA5F /* VoteButtonsView.swift */,
+				24738A272AE9B2950038BA5F /* VoteButtonsViewModel.swift */,
+				24738A202AE9B1DA0038BA5F /* NewPlaylistViewModel.swift */,
+				24738A242AE9B22E0038BA5F /* SongLinkViewModel.swift */,
+				24738A372AE9B3A70038BA5F /* ColorListView.swift */,
+				24738A362AE9B3A70038BA5F /* ColorListViewModel.swift */,
 				227AF86127495D3E00650089 /* PlaylistSelectionView.swift */,
 				227AF86D2749664C00650089 /* HostRoomViewModel.swift */,
 				22A4EE812749788D00CBFF95 /* SelectMusicProviderView.swift */,
 				22A4EE83274978CB00CBFF95 /* SelectMusicProviderViewModel.swift */,
+				24738A102AE9AFBF0038BA5F /* NewPlaylistView.swift */,
 				22A4EE8527497C6D00CBFF95 /* ServiceLocator.swift */,
 				22A4EE87274980B900CBFF95 /* RootView.swift */,
 				22A4EE89274980E300CBFF95 /* RootViewModel.swift */,
@@ -247,6 +318,8 @@
 			children = (
 				227AF8642749641400650089 /* RoomService.swift */,
 				227AF869274964B700650089 /* RoomServiceImpl.swift */,
+				24738A1A2AE9B1920038BA5F /* ChatService.swift */,
+				24738A1C2AE9B19C0038BA5F /* ChatServiceImpl.swift */,
 				22A4EE932749894800CBFF95 /* MusicService.swift */,
 				22A4EE9927498A8D00CBFF95 /* MusicServiceImpl.swift */,
 			);
@@ -256,6 +329,7 @@
 		227AF8662749644F00650089 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				24738A032AE9AEF80038BA5F /* Chat */,
 				22A4EE9627498A0600CBFF95 /* Music */,
 				22A4EE95274989F600CBFF95 /* Room */,
 			);
@@ -276,13 +350,16 @@
 			children = (
 				227AF8672749645900650089 /* Room.swift */,
 				227AF86B2749654200650089 /* HostRoomResult.swift */,
+				24738A0E2AE9AF950038BA5F /* VoteTally.swift */,
 				22A4EE71274970F500CBFF95 /* UpdateSongResult.swift */,
 				22A4EE732749713D00CBFF95 /* Song.swift */,
 				22A4EE752749717900CBFF95 /* UpdateNominationsResult.swift */,
 				22A4EE772749727400CBFF95 /* VoteResult.swift */,
 				22A4EE79274972A400CBFF95 /* Vote.swift */,
 				22A4EE7B2749734400CBFF95 /* JoinRoomResult.swift */,
+				24738A322AE9B2EE0038BA5F /* Setting.swift */,
 				22A4EE7D2749746900CBFF95 /* RefreshRoomResult.swift */,
+				24738A142AE9B0010038BA5F /* SettingsState.swift */,
 				22A4EE7F2749775100CBFF95 /* LeaveRoomResult.swift */,
 			);
 			path = Room;
@@ -303,6 +380,19 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		24738A032AE9AEF80038BA5F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				24738A042AE9AEF80038BA5F /* ChatMessage.swift */,
+				24738A052AE9AEF80038BA5F /* SendMessageResult.swift */,
+				24738A062AE9AEF80038BA5F /* VoteMessage.swift */,
+				24738A072AE9AEF80038BA5F /* GetChatRoomResutl.swift */,
+				24738A082AE9AEF80038BA5F /* ChatRoom.swift */,
+			);
+			name = Chat;
+			path = DJApp/Model/Chat;
+			sourceTree = SOURCE_ROOT;
+		};
 		3ACF68035DB75BAE4FD598F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,10 +409,10 @@
 		C7DB9AFBC9019089458FA760 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22A4EEA1274AB45B00CBFF95 /* SpotifyiOS.framework */,
-				AD08E1BC55213ECA2E6FCDFE /* Pods_DJApp.framework */,
-				91B27DDD9677CBD0B6916FEF /* Pods_DJApp_DJAppUITests.framework */,
-				DF89ABCFBF8629A28CED8FE2 /* Pods_DJAppTests.framework */,
+				24738A3C2AE9B7E80038BA5F /* SpotifyiOS.xcframework */,
+				286DD1069042B073D3EC116B /* Pods_DJApp.framework */,
+				D04E7656B6AD59E66A880A72 /* Pods_DJApp_DJAppUITests.framework */,
+				0A97A12E41DA0E10D491AA99 /* Pods_DJAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,7 +486,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					227AF82F274948D700650089 = {
 						CreatedOnToolsVersion = 13.1;
@@ -568,42 +658,69 @@
 				22A4EEA5274AB75400CBFF95 /* DJApp-Bridging-Header.h in Sources */,
 				22A4EE762749717900CBFF95 /* UpdateNominationsResult.swift in Sources */,
 				22A4EEAD274B021800CBFF95 /* ChooseProviderResult.swift in Sources */,
+				24738A192AE9B16F0038BA5F /* CurrentSongView.swift in Sources */,
 				22A4EE942749894800CBFF95 /* MusicService.swift in Sources */,
 				22A4EE6E27496D0300CBFF95 /* RoomRepository.swift in Sources */,
+				24738A332AE9B2EE0038BA5F /* Setting.swift in Sources */,
 				22A4EEAF274B0A8600CBFF95 /* LoadPlaylistResult.swift in Sources */,
+				24738A0A2AE9AEF80038BA5F /* SendMessageResult.swift in Sources */,
+				24738A2A2AE9B2950038BA5F /* VoteButtonsView.swift in Sources */,
 				227AF86A274964B700650089 /* RoomServiceImpl.swift in Sources */,
 				227AF8652749641400650089 /* RoomService.swift in Sources */,
 				22A4EE72274970F500CBFF95 /* UpdateSongResult.swift in Sources */,
 				227AF86C2749654200650089 /* HostRoomResult.swift in Sources */,
 				22A4EEA9274AFB9E00CBFF95 /* LoadPlaylistsResult.swift in Sources */,
+				24738A0B2AE9AEF80038BA5F /* VoteMessage.swift in Sources */,
 				227AF85E274955F100650089 /* HostRoomView.swift in Sources */,
+				24738A172AE9B0390038BA5F /* EnterCodeView.swift in Sources */,
+				24738A2B2AE9B2950038BA5F /* VoteButtonsViewModel.swift in Sources */,
 				22A4EE7E2749746900CBFF95 /* RefreshRoomResult.swift in Sources */,
+				24738A1B2AE9B1920038BA5F /* ChatService.swift in Sources */,
+				24738A302AE9B2BC0038BA5F /* ChatView.swift in Sources */,
 				22A4EE88274980B900CBFF95 /* RootView.swift in Sources */,
 				227AF8682749645900650089 /* Room.swift in Sources */,
 				22A4EE822749788D00CBFF95 /* SelectMusicProviderView.swift in Sources */,
+				24738A0D2AE9AEF80038BA5F /* ChatRoom.swift in Sources */,
 				22A4EE90274988DF00CBFF95 /* HostSectionView.swift in Sources */,
+				24738A0F2AE9AF950038BA5F /* VoteTally.swift in Sources */,
 				22A4EE8627497C6D00CBFF95 /* ServiceLocator.swift in Sources */,
 				22A4EEAB274AFF1800CBFF95 /* PlaylistSelectionViewModel.swift in Sources */,
 				22A4EE782749727400CBFF95 /* VoteResult.swift in Sources */,
+				24738A0C2AE9AEF80038BA5F /* GetChatRoomResutl.swift in Sources */,
 				227AF86027495B5700650089 /* JoinRoomView.swift in Sources */,
+				24738A1F2AE9B1BB0038BA5F /* CurrentSongViewModel.swift in Sources */,
 				22A4EE922749890A00CBFF95 /* GuestSectionView.swift in Sources */,
 				227AF836274948D700650089 /* HomeView.swift in Sources */,
+				24738A252AE9B22E0038BA5F /* SongLinkViewModel.swift in Sources */,
 				22A4EE84274978CB00CBFF95 /* SelectMusicProviderViewModel.swift in Sources */,
+				24738A382AE9B3A70038BA5F /* ColorListViewModel.swift in Sources */,
 				22A4EE7A274972A400CBFF95 /* Vote.swift in Sources */,
+				24738A212AE9B1DA0038BA5F /* NewPlaylistViewModel.swift in Sources */,
+				24738A2D2AE9B2950038BA5F /* SettingsViewModel.swift in Sources */,
+				24738A1D2AE9B19C0038BA5F /* ChatServiceImpl.swift in Sources */,
+				24738A392AE9B3A70038BA5F /* ColorListView.swift in Sources */,
 				22A4EE9C27498B0200CBFF95 /* HostSectionViewModel.swift in Sources */,
+				24738A132AE9AFEB0038BA5F /* GuestSectionViewModel.swift in Sources */,
+				24738A312AE9B2BC0038BA5F /* ChatViewModel.swift in Sources */,
 				22A4EE9A27498A8D00CBFF95 /* MusicServiceImpl.swift in Sources */,
 				22A4EEA7274AF6EA00CBFF95 /* Provider.swift in Sources */,
 				22A4EEA02749DC3000CBFF95 /* SongStatus.swift in Sources */,
+				24738A112AE9AFBF0038BA5F /* NewPlaylistView.swift in Sources */,
+				24738A2C2AE9B2950038BA5F /* SettingsView.swift in Sources */,
 				22A4EE802749775100CBFF95 /* LeaveRoomResult.swift in Sources */,
 				22A4EE742749713D00CBFF95 /* Song.swift in Sources */,
 				227AF86227495D3E00650089 /* PlaylistSelectionView.swift in Sources */,
+				24738A232AE9B2210038BA5F /* SongLinkView.swift in Sources */,
 				22A4EE9E2749D80800CBFF95 /* LoadSongsResult.swift in Sources */,
 				22A4EE9827498A4400CBFF95 /* Playlist.swift in Sources */,
 				22A4EE8A274980E300CBFF95 /* RootViewModel.swift in Sources */,
+				24738A352AE9B3350038BA5F /* FlexibleSheet.swift in Sources */,
 				227AF834274948D700650089 /* DJAppApp.swift in Sources */,
+				24738A152AE9B0010038BA5F /* SettingsState.swift in Sources */,
 				22A4EE7027496D2500CBFF95 /* MockRoomRepository.swift in Sources */,
 				227AF86E2749664C00650089 /* HostRoomViewModel.swift in Sources */,
 				22A4EEB1274B0B5400CBFF95 /* SelectPlaylistResult.swift in Sources */,
+				24738A092AE9AEF80038BA5F /* ChatMessage.swift in Sources */,
 				22A4EE7C2749734400CBFF95 /* JoinRoomResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +795,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -696,6 +814,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -739,6 +858,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -750,6 +870,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
