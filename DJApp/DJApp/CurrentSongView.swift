@@ -78,13 +78,13 @@ struct SongListingView: View {
                 
             }
             VStack (alignment: .leading) {
-                if let song = song {
+
                     Text("**\(song.title)**").lineLimit(1)
                          
                     Text("\(song.artist)").lineLimit(1)
                         
-                }
-                
+
+                    
             }
         }
         
