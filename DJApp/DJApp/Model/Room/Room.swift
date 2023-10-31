@@ -14,5 +14,7 @@ struct Room {
     let hosting: Bool
     let currentSong: Song?
     let nominations: (Song, Song)?
-    let vote: Vote?
+    var vote: Vote?
+    var voteTally: VoteTally
+    var settingsState: SettingsState?
 }

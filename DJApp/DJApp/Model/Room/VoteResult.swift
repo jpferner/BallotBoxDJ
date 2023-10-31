@@ -13,6 +13,6 @@ enum VoteError {
 }
 
 enum VoteResult {
-    case success
+    case success(_ room: Room)
     case failure(_ error: VoteError)
 }

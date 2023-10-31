@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Playlist {
+struct Playlist: Identifiable {
     let id: String
     let name: String
+    var artwork: String? = nil
 }
+
